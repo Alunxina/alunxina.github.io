@@ -61,14 +61,14 @@ navbarLinks.forEach(link => {
         event.preventDefault();
         const targetId = link.getAttribute('href').substring(1);
         const targetSection = document.getElementById(targetId);
-        targetSection.scrollIntoView({ behavior: 'smooth' });
+        targetSection.scrollIntoView();
     });
 });
 
 const topLink = document.getElementById('topLink');
 
 topLink.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0});
 });
 
 const contactLinks = document.querySelectorAll('.sectiononewrap a');
@@ -78,6 +78,6 @@ contactLinks.forEach(link => {
         event.preventDefault();
         const targetId = link.getAttribute('href').substring(1);
         const targetSection = document.getElementById(targetId);
-        targetSection.scrollIntoView({ behavior: 'smooth' });
+        targetSection.scrollIntoView();
     });
 });

@@ -6,8 +6,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #141416;
+    width:100%
 }
 
+html{
+    behavior: 'smooth';
+}
 
 /* Navigation Bar */
 .navbar {
@@ -28,12 +32,14 @@ body {
 .nametitle {
     font-size: 1.5rem;
     margin: 2rem;
+    cursor: pointer;
 }
 
 .navbarlinks ul {
     margin: 0;
     padding: 0;
     display: flex;
+    cursor: pointer;
 }
 
 .navbarlinks li {
@@ -62,6 +68,9 @@ body {
 }
 
 
+
+
+
 /* Landing Page */
 .landingpagewrap {
     font-family: "Roboto", sans-serif;
@@ -84,6 +93,7 @@ body {
     font-family: 'Prompt', sans-serif;
 
 }
+
 
 .landingpage h2 {
     gap: 0 align-items: left;
@@ -165,6 +175,9 @@ body {
     width: auto;
 
 }
+
+
+
 
 
 /* Skills Page */
@@ -255,6 +268,7 @@ body {
     width: 10rem;
     font-family: 'Prompt', sans-serif;
     width: auto;
+    cursor: pointer;
 
 
 }
@@ -318,7 +332,7 @@ body {
     border-radius: 5px;
     text-align: center;
     margin-bottom: 20px;
-    width: 800px;
+    width: auto;
 }
 
 .card {
@@ -389,10 +403,12 @@ body {
 /* Projects and Contribution Cards */
 .cards a {
     text-decoration: none
+    
 }
 
 .content {
     padding: 1.1rem;
+    cursor: pointer;
 
 }
 
@@ -526,4 +542,169 @@ body {
     align-items: center;
     justify-content: space-around;
     padding-bottom: 3rem;
+    
+}
+
+
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 450px) {
+    .navbar{
+        width: 100vh;
+    }
+    .nametitle {
+        margin: 1rem;
+    }
+
+    .navbarlinks {
+        display: none;
+    }
+
+    .navbarlinks ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbarlinks li {
+        margin: 0.5rem;
+    }
+
+    .navbarlinks li a {
+        padding: 0.5rem;
+    }
+    .landingpage{
+        width: 100vh;
+    }
+    .landingpage h1 {
+        font-size: 60px;
+    }
+
+    .landingpage h2 {
+        font-size: 20px;
+    }
+    body{
+        margin-left: 5%;
+        margin-right: 5%;
+        width:100vh;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .main {
+        margin-left: 5%;
+        margin-right: 5%;
+        width:100vh;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom:5vh;
+    }
+
+    .about{
+        margin-bottom: 5vh;
+    }
+
+    .about img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100vh;
+        background-size: cover;
+        margin-bottom: 3vh;
+    }
+
+    .about-text p {
+        font-size: 20px;
+        width:80%;
+        align-items: center;
+    }
+
+    .skills {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5vh;
+    }
+    
+    .skillswrap{
+        width:100vh;
+        margin-left:0;
+    }
+
+    .skillswrap h1 {
+        margin-top: 5vh;
+        font-size: 5rem;
+        width:100%;
+        margin-left:3rem;
+    }
+
+    
+    .skillscards {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 1.5rem;
+    }
+
+    .headers{
+        font-size: 5rem;
+        width:100%;
+        margin-top: 20vh;
+        margin-left: 4rem;
+
+    }
+    .skillscards {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 1.5rem;
+    }
+    .card-container{
+        width:100%;
+    }
+    .projects{
+        width:100vh;
+    }
+    .cardswrap{
+        width:50%;
+        margin-bottom: 5vh;
+    }
+
+    .buttonwrap {
+        margin-left: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .flexcard{
+        width:100%;
+    }
+
+    .cardmain{
+        width:50%;
+        align-items: center;
+    }
+
+    .card-container{
+        width:100%;
+    }
+    .contactcard{
+        width:80%;
+    }
+    .contactcard-content{
+        width:100%;
+    }
+
+    .contactabout-text h2 {
+        font-size: 40px;
+        margin-top: 50px;
+        margin-left: 2rem;
+    }
+
+    .contactabout-text h5 {
+        font-size: 50px;
+        margin-left: 2rem;
+    }
+
+    .contactabout-text p {
+        font-size: 16px;
+        margin-left: 2rem;
+    }
 }
