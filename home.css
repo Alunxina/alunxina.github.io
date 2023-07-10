@@ -1,0 +1,529 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #141416;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    font-family: 'Prompt', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141416;
+    color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.nametitle {
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+.navbarlinks ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbarlinks li {
+    list-style: none;
+}
+
+.navbarlinks li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbarlinks li :hover {
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+}
+
+.landingpage {
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;
+    background: url(homebg.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+/* Landing Page */
+.landingpagewrap {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+
+}
+
+.landingpage h1 {
+    margin-bottom: 10px;
+    align-items: left;
+    font-size: 100px;
+    background: -webkit-linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Prompt', sans-serif;
+
+}
+
+.landingpage h2 {
+    gap: 0 align-items: left;
+    font-size: 25px;
+    font-family: 'Palanquin', sans-serif;
+
+}
+
+/* About Page */
+
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #141416;
+}
+
+.about-text {
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.about img {
+    height: auto;
+    width: 500px;
+    border-radius: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.headers {
+    font-size: 100px;
+    margin-bottom: 20px;
+    font-family: 'Prompt', sans-serif;
+    background: -webkit-linear-gradient(316deg, #AF40FF, #00DDEB 30%, #5B42F3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 20rem;
+    font-weight: bold;
+}
+
+.main {
+    width: auto;
+    margin-left: 19rem;
+    margin-right: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.about-text h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-family: 'Prompt', sans-serif;
+    background: -webkit-linear-gradient(144deg, #AF40FF, #00DDEB 50%, #5B42F3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-text h5 {
+    color: #cc0000;
+    letter-spacing: 2px;
+    font-size: 40px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    background: -webkit-linear-gradient(144deg, #4a00e0 30%, #8e2de2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.about-text p {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: 'Palanquin', sans-serif;
+    width: auto;
+
+}
+
+
+/* Skills Page */
+
+.skills {
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    height: auto;
+    flex-direction: column;
+    background-color: #141416;
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+}
+
+.skillswrap {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 10rem;
+    margin-right: 8rem;
+    height: auto;
+    /* Take up the full height of the container */
+    font-size: 30px;
+
+}
+
+.skillswrap h1 {
+    align-items: left;
+    font-size: 80px;
+    background: -webkit-linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Prompt', sans-serif;
+}
+
+.skillswrap a {
+    align-items: left;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    color: white;
+    font-family: 'Palanquin', sans-serif;
+}
+
+.skillscards {
+    color: white;
+    display: flex;
+    padding: 10px;
+    width: 10rem;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: space-between;
+
+}
+
+.skillscards>div {
+    margin-left: 1rem;
+    width: 10rem;
+    display: flex;
+}
+
+.skillscards h2 {
+    display: flex;
+    color: white;
+    font-size: 15px;
+}
+
+
+
+/* Gradient Buttons */
+
+
+.gradientbutton {
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
+    border: none;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: ghostwhite;
+    overflow: hidden;
+    width: 10rem;
+    font-family: 'Prompt', sans-serif;
+    width: auto;
+
+
+}
+
+.gradientbutton a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.gradientbutton span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.gradientbutton::before,
+.gradientbutton::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.gradientbutton::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.gradientbutton:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.gradientbutton:active {
+    transform: scale(0.95);
+}
+
+
+
+/* Skills Card display */
+
+.cardmain {
+    display: grid;
+    margin: 100px;
+    margin-left: 10rem;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-gap: 20px;
+}
+
+.card-container {
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 800px;
+}
+
+.card {
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    padding: 5px;
+    transition: all 0.5s;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+}
+
+
+.card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(5, 6, 45);
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    height: 100px;
+}
+
+.card-content h1 {
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 5rem;
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+}
+
+.card-content progress {
+    height: 24px;
+    width: 80%;
+    margin-right: 5rem;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    background: linear-gradient(315deg, #ff0058, #03a9f4);
+
+}
+
+.cardswrap {
+    display: grid;
+    margin: 100px;
+    margin-left: 10rem;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    width: auto;
+    border-radius: 10px;
+
+}
+
+.cards {
+    max-width: 400px;
+    border-radius: 0.5rem;
+    background-color: rgb(5, 6, 45);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+
+}
+
+
+/* Projects and Contribution Cards */
+.cards a {
+    text-decoration: none
+}
+
+.content {
+    padding: 1.1rem;
+
+}
+
+.cards img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(5, 6, 45);
+    border-radius: 1px;
+}
+
+.title {
+    color: white;
+    font-size: 20px;
+    line-height: 1.75rem;
+
+    font-family: 'Prompt', sans-serif;
+}
+
+.role {
+    color: white;
+    font-size: 15px;
+    line-height: 1.75rem;
+
+    font-family: 'Prompt', sans-serif;
+}
+
+.desc {
+    margin-top: 0.5rem;
+    color: white;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family: 'Palanquin', sans-serif;
+}
+
+.animate {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    align-items: center;
+    gap: 0.25rem;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: 'Prompt', sans-serif;
+
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    background: linear-gradient(315deg, #ff0058, #03a9f4);
+
+}
+
+.cards:hover img {
+    transform: scale(1);
+    background: linear-gradient(315deg, #ff0058, #03a9f4);
+
+}
+
+.animate span {
+    transition: .3s ease;
+}
+
+.animate:hover span {
+    transform: translateX(4px);
+}
+
+
+/*Contacts Card Display*/
+.contactcard {
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    margin-left: 8%;
+    margin-bottom: 10%;
+}
+
+.contactcard-content {
+    background: rgb(5, 6, 45);
+    border-radius: 17px;
+    width: 100%;
+    height: 100%;
+    padding-top: 3rem;
+}
+
+.contactabout-text {
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+
+.contactabout-text h2 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    font-family: 'Prompt', sans-serif;
+    background: -webkit-linear-gradient(144deg, #AF40FF, #00DDEB 50%, #5B42F3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contactabout-text h5 {
+    letter-spacing: 2px;
+    font-size: 80px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-left: 5rem;
+    color: white;
+    font-family: 'Prompt', sans-serif;
+}
+
+.contactabout-text p {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-family: 'Prompt', sans-serif;
+    margin-left: 5rem;
+    width: auto;
+
+}
+
+.buttonwrap {
+    margin-left: 5rem;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+}
